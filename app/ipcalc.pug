@@ -8,18 +8,7 @@ html(lang="ru")
 		+settings()
 	body
 		main.content
-			header#header
-				.wrapper
-					h1 <span>Ip</span> Calc
-					.main-nav
-						nav
-							ul
-								li
-									a(href="index.html") Маршрутизация
-								li.active
-									a(href="ipcalc.html") IP калькулятор
-								li
-									a(href="#") Об авторе
+			+header("", "active", "")
 			+content-ip-calc()
 
 

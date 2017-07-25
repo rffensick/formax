@@ -1,13 +1,13 @@
-mixin header()
+mixin header(first, second, third)
 	header#header
 		.wrapper
 			h1 <span>Ip</span> Calc
 			.main-nav
 				nav
 					ul
-						li.active
+						li(class=first)
 							a(href="index.html") Маршрутизация
-						li
+						li(class=second)
 							a(href="ipcalc.html") IP калькулятор
-						li
+						li(class=third)
 							a(href="#") Об авторе
