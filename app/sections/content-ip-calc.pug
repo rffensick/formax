@@ -1,0 +1,74 @@
+mixin content-ip-calc()
+  section#content-ip-calc
+    .wrapper
+      .block-1
+        form(method="post")
+          .group
+            input(type="text" required).input-material
+            span.highlight
+            span.bar
+            label Введите IP
+          .group
+            input(type="text" required).input-material
+            span.highlight
+            span.bar
+            label Введите номер списка
+          .group
+            select
+              option(value="0") 0.0.0.0
+              option(value="1") 128.0.0.0
+              option(value="2") 192.0.0.0
+              option(value="3") 224.0.0.0
+              option(value="4") 240.0.0.0
+              option(value="5") 240.0.0.0
+              option(value="6") 252.0.0.0
+              option(value="7") 254.0.0.0
+              option(value="8") 255.0.0.0
+              option(value="9") 255.128.0.0
+              option(value="10") 255.192.0.0
+              option(value="11") 255.224.0.0
+              option(value="12") 255.240.0.0
+              option(value="13") 255.248.0.0
+              option(value="14") 255.252.0.0
+              option(value="15") 255.254.0.0
+              option(value="16") 255.255.0.0
+              option(value="17") 255.255.128.0
+              option(value="18") 255.255.192.0
+              option(value="19") 255.255.224.0
+              option(value="20") 255.255.240.0
+              option(value="21") 255.255.248.0
+              option(value="22") 255.255.252.0
+              option(value="23") 255.255.254.0
+              option(value="24") 255.255.255.0
+              option(value="25") 255.255.255.128
+              option(value="26") 255.255.255.192
+              option(value="27") 255.255.255.224
+              option(value="28") 255.255.255.240
+              option(value="29") 255.255.255.248
+              option(value="30") 255.255.255.252
+              option(value="31") 255.255.255.254
+              option(value="32") 255.255.255.255
+            span.highlight
+            span.bar
+          button(value="Вычеслить").btn-1 Вычислить
+      .block-message
+        p Всё прошло успешно! Расчёт занял: 19.3 миллисекунд.
+      .block-content
+        table(border="1")
+          tbody(align="center")
+            tr
+              td.number.name №
+              td.ip-1.name IP-1
+              td.ip-2.name IP-2
+            tr
+              td.number 1:
+              td.ip-1 0.0.0.0
+              td.ip-2 254.0.0.0
+            tr
+              td.number 2: 
+              td.ip-1 0.0.0.0
+              td.ip-2 254.0.0.0
+            tr
+              td.number 3:
+              td.ip-1 0.0.0.0
+              td.ip-2 254.0.0.0

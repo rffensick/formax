@@ -1,0 +1,27 @@
+include sections/header
+include settings/settings
+include sections/content-ip-calc
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		+settings()
+	body
+		main.content
+			header#header
+				.wrapper
+					h1 <span>Ip</span> Calc
+					.main-nav
+						nav
+							ul
+								li
+									a(href="index.html") Маршрутизация
+								li.active
+									a(href="ipcalc.html") IP калькулятор
+								li
+									a(href="#") Об авторе
+			+content-ip-calc()
+
+
+		link(rel="stylesheet" href="css/main.min.css")
+		script(src="js/scripts.min.js")

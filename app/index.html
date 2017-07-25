@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Eduard</title>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta property="og:image" content="path/to/image.jpg"/>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"/>
+    <meta name="theme-color" content="#000"/>
+    <meta name="msapplication-navbutton-color" content="#000"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
+  </head>
+  <body>
+    <main class="content">
+      <header id="header">
+        <div class="wrapper">
+          <h1><span>Ip</span> Calc</h1>
+          <div class="main-nav">
+            <nav>
+              <ul>
+                <li class="active"><a href="index.html">Маршрутизация</a></li>
+                <li><a href="ipcalc.html">IP калькулятор</a></li>
+                <li><a href="#">Об авторе</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section id="content">
+        <div class="wrapper">
+          <div class="block-1">
+            <form method="post">
+              <div class="group">
+                <input class="input-material" type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+                <label>Введите IP</label>
+              </div>
+              <div class="group">
+                <input class="input-material" type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+                <label>Введите IP</label>
+              </div>
+              <button class="btn-1" value="Вычеслить">Вычислить</button>
+            </form>
+          </div>
+          <div class="block-message">
+            <p>Всё прошло успешно! Расчёт занял: 19.3 миллисекунд.</p>
+          </div>
+          <div class="block-content">
+            <table border="1">
+              <tbody align="center">
+                <tr>
+                  <td class="number name">№</td>
+                  <td class="ip-1 name">IP-1</td>
+                  <td class="ip-2 name">IP-2</td>
+                </tr>
+                <tr>
+                  <td class="number">1:</td>
+                  <td class="ip-1">0.0.0.0</td>
+                  <td class="ip-2">254.0.0.0</td>
+                </tr>
+                <tr>
+                  <td class="number">2: </td>
+                  <td class="ip-1">0.0.0.0</td>
+                  <td class="ip-2">254.0.0.0</td>
+                </tr>
+                <tr>
+                  <td class="number">3:</td>
+                  <td class="ip-1">0.0.0.0</td>
+                  <td class="ip-2">254.0.0.0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <link rel="stylesheet" href="css/main.min.css"/>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
